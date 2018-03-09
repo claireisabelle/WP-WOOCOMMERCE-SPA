@@ -106,3 +106,64 @@ ul.products li.product.product-category img:hover{
     Main Navigation
  *************************************************
  */
+
+.site-header .site-branding{
+  margin-bottom: 1em;
+}
+
+@media only screen and (min-width: 768px){
+
+  .storefront-primary-navigation{
+    background-color: #8ed4cc;
+  }
+  
+  .main-navigation ul.menu>li>a,
+  .main-navigation ul.nav-menu>li>a, 
+  .site-header-cart .cart-contents,
+  .site-header ul.menu li.current-menu-item > a,
+  .main-navigation ul.menu ul li a,
+  .main-navigation ul.nav-menu ul li a{
+    padding: 0.9em 1em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+  }
+  
+  .main-navigation ul.menu ul.sub-menu{
+    background-color: #e282a8;
+  }
+  
+  .site-header-cart .cart-contents .count{
+    opacity: 1;
+    font-weight: 400;
+  }
+}
+
+
+/*
+ ************************************************* 
+    Mobile Menu
+ *************************************************
+ */
+.handheld-navigation{
+  background-color: #8ed4cc;
+}
+
+.handheld-navigation ul li{
+  text-align: center;
+  width: 50%;
+  float: left;
+}
+
+.handheld-navigation ul.sub-menu{
+  margin-left: 0;
+}
+
+.handheld-navigation ul li a{
+  color: #fff!important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+
