@@ -14,21 +14,70 @@
 
 /*
  ************************************************* 
-    Tests
+    Globals
+ *************************************************
+ */
+
+h1, h2, h3{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h2.section-title:after,
+h2.woocommerce-loop-category__title:after{
+  content: '';
+  display: block;
+  margin: 10px auto 0 auto;
+  height: 2px;
+  width: 60px;
+  background-color: #e282a8;
+}
+
+h2.banner{
+  font-family: 'Lora', serif;
+}
+
+ul.products li.product.product-category .woocommerce-loop-category__title, 
+ul.products li.product.product-category h2{
+  font-size: 1.4em;
+}
+
+.main-content{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+/*
+ ************************************************* 
+    HomePage Categories
  *************************************************
  */
 ul.products li.product.product-category img{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 ul.products li.product.product-category img:hover{
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    -ms-transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1); 
+}
+
+.storefront-product-categories h2.section-title{
+  display: none;
+}
+
+@media only screen and (min-width: 768px){
+  .page-template-template-homepage-php .site-main .columns-3 ul.products li.product{
+    width: 33%;
+    float: left;
+    margin-right: 0.5%;
+  }
+  
+  .page-template-template-homepage-php .site-main .columns-3 ul.products li.product img{
+    width: 100%;
+  }
 }
 
 .single_add_to_cart_button::before{
