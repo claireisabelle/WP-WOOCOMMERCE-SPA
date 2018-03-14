@@ -44,8 +44,58 @@ function carolinaspa_homepage_homekit(){ ?>
                 <a href="<?php echo get_category_link($home_kit['term_id']) ?>">All Products &raquo;</a>
                 
             </div>
+            <?php echo do_shortcode('[product_category category="home-kits" per_page="3" orderby="price" order="asc" columns="9"]'); ?>
         </div>
     </div>
 <?php 
 }
 add_action('homepage', 'carolinaspa_homepage_homekit', 25);
+
+
+// Banner with message - front-page
+function carolinaspa_spoil_banner(){ ?>
+    <div class="banner-spoil">
+        <div class="columns-4">
+            <h3><?php the_field('banner_text'); ?></h3>
+        </div>
+        <div class="columns-8">
+            <img src="<?php the_field('banner_image'); ?>" alt="">
+        </div>
+    </div>
+
+<?php    
+}
+add_action('homepage', 'carolinaspa_spoil_banner', 80);
+
+
+// Print Features with icons
+function carolinaspa_display_features(){ ?>
+            </main>
+        </div><!-- #primary -->
+    </div><!-- .col-full -->
+
+    <div class="home-features">
+        <div class="col-full">
+            <div class="columns-4">
+                <?php the_field('feature_icon_1'); ?>
+                <p><?php the_field('feature_content_1'); ?></p>
+            </div>
+            <div class="columns-4">
+                <?php the_field('feature_icon_2'); ?>
+                <p><?php the_field('feature_content_2'); ?></p>
+            </div>
+            <div class="columns-4">
+                <?php the_field('feature_icon_3'); ?>
+                <p><?php the_field('feature_content_3'); ?></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-full">
+        <div class="content-area">
+            <div class="site-main">
+
+<?php
+}
+add_action('homepage', 'carolinaspa_display_features', 15);

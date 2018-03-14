@@ -216,3 +216,152 @@ ul.products li.product.product-category img:hover{
 }
 
 
+/*
+ ************************************************* 
+    Home Kits Category - Front Page
+ *************************************************
+ */
+
+.homepage-home-kit-category{
+  background-color: #cccccc;
+  padding: 1em;
+  margin-bottom: 2em;
+} 
+
+.homepage-home-kit-category .content{
+  background-color: #fff;
+  padding: 1em;
+}
+
+.homepage-home-kit-category .content .columns-3 h2{
+  text-align: center;
+}
+
+.homepage-home-kit-category .content .columns-3 p{
+  margin-bottom: 2em;
+}
+
+.homepage-home-kit-category .content .columns-3 a{
+  color: #e282a8;
+  font-size: 1.4em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 768px){
+  .homepage-home-kit-category .content::after{
+    content: '';
+    display: table;
+    clear: both;
+  }
+
+  .homepage-home-kit-category .columns-3{
+    width: 25%;
+    float: left;
+    padding-right: 1em;
+  }
+
+  .homepage-home-kit-category .columns-9{
+    width: 75%;
+    float: left;
+  }
+
+  .homepage-home-kit-category ul.products.columns-9{
+    width: 100%!important;
+  }
+
+  .homepage-home-kit-category ul.products li.product{
+    margin-bottom: 0;
+    width: 32%;
+    margin-right: 2%;
+  }
+
+  .homepage-home-kit-category ul.products li.product:last-child{
+    margin-right: 0!important;
+  }
+}
+
+/*
+ ************************************************* 
+    Banner message Front Page
+ *************************************************
+ */
+
+ .banner-spoil h3{
+   font-family: 'Lora', serif;
+   text-transform: none;
+   font-weight: 400;
+   font-size: 3em;
+   text-align: center;
+ }
+
+ @media only screen and (min-width: 768px){
+  .banner-spoil .columns-4 h3{
+    text-align: right;
+    font-size: 3.4em;
+  }
+
+  .banner-spoil .columns-4{
+    float: left;
+    width: 33.3%;
+    padding-right: 3em;
+  }
+
+  .banner-spoil .columns-8{
+    float: left;
+    width: 66.6%;
+  }
+ }
+
+/*
+ ************************************************* 
+    Home features with Icons
+ *************************************************
+ */
+
+.home .content-area{
+  margin-bottom: 0;
+}
+
+.home-features{
+  background-color: #e282a8;
+  padding: 3em 0;
+  margin-bottom: 2.8em;
+ }
+
+.home-features .col-full{
+  display: flex;
+  flex-flow: row wrap;
+ }
+
+.home-features .columns-4{
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.home-features .columns-4 i{
+  font-size: 3em;
+  margin-right: .3em;
+}
+
+.home-features .columns-4 p{
+  margin: 0;
+  font-size: 1.4em;
+}
+
+@media only screen and (min-width: 480px){
+  .home-features .columns-4{
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-bottom: 0;
+  }
+
+}
